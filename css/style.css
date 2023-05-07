@@ -37,7 +37,10 @@ footer {
     color:  var(--blue-color);
 }
 .section-first {
-    background: var(--dark-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 1600px;
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -45,7 +48,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 250px 100px;
+    height: 600px;
     margin: auto;
     text-align: center;
     border-top: 1px solid var(--light-color);
@@ -64,6 +67,13 @@ footer {
     line-height: 1.5rem;
     padding: 0 30px;
 }
+.section-second .icon {
+    width: 270px;
+    height: 120px;
+    margin-left: 25px;
+    background-color: var(--light-color);
+    border-radius: 4px;
+} 
 .section-third .big-font {
     font-weight: 700;
     font-size: 36px;
@@ -119,10 +129,15 @@ a {
 }
 .link-2 {
     color: var(--grey-color);
-    padding-left: 50px;
+    margin-right: 30px;
+    fill: var(--grey-color);
+}
+.link-2 > svg {
+    margin-right: 10px;
 }
 .link-2:hover {
     color: var(--blue-color);
+    fill: var(--blue-color);
 }
 button {
     background: var(--light-color);
@@ -145,7 +160,6 @@ button:hover {
     width: 200px;
     min-height: 50px;
     margin: 30px auto 100px;
-    
 }
 .container {
     width: 1200px;
@@ -163,7 +177,7 @@ button:hover {
     list-style-type: none;
     padding-right: 93px;
 }
-.header  .box-right {
+.header .box-right {
     margin-left: auto;
 }
 .item {
