@@ -38,7 +38,7 @@ footer {
     color:  var(--blue-color);
 }
 .section-first {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/background.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 1600px;
@@ -240,10 +240,13 @@ button:hover {
 }
 .box-bottom .icon {
     margin: 16px 5px 30px;
-    fill: transparent;
+    background-color: transparent;
+    fill: var(--light2-color);
 }
 .box-bottom .icon:hover {
-    fill: var(--blue-color);
+    background-color: var(--blue-color);
+    fill: var(--white-color);
+    border-radius: 22px;
 }
 .section-fourth .item {
     padding: 0;
@@ -277,11 +280,15 @@ button:hover {
     padding: 0;
 }
 .footer .icon {
-    fill: rgba(255, 255, 255, 0.1);
+    fill: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 22px;
     margin: 0 5px 0;
 }
 .footer .icon:hover {
-    fill: var(--blue-color);
+    fill: var(--white-color);
+    background-color: var(--blue-color);
+    border-radius: 22px;
 }
 .box-portfolio {
     display: flex;
@@ -289,10 +296,16 @@ button:hover {
     border-top: 1px solid var(--light-color);
     padding: 100px 0 0 ;
 }
-.box-bottons {
+.box-buttons {
     width: 545px;
     display: flex;
     justify-content: space-between;
+}
+.box-buttons button:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.box-buttons button:focus {
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1), 1px 1px 5px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.12);
 }
 .section-fifth .box {
     margin: 50px auto 94px;
@@ -309,4 +322,7 @@ button:hover {
     flex-direction: column;
     margin-bottom: 30px;
     align-items: flex-start;
+}
+.section-fifth .item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
